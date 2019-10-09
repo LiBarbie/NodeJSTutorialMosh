@@ -7,6 +7,6 @@ emitter.on('messageLogged',function(arg){
     console.log('Listener called', arg);
 });
 
-const log = require('./logger');
-
-log('message');
+const Logger = require('./logger');
+const logger = new Logger();
+logger.log('message');
